@@ -5,8 +5,8 @@ import logo from "../../public/HM&C.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-red">
-      <div className="navbar-start">
+    <header className="navbar bg-red">
+      <nav className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -63,7 +63,7 @@ const Navbar = () => {
             className="w-12 md:w-[3.5rem] lg:w-16"
           />
         </Link>
-      </div>
+      </nav>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 items-center">
           <li>
@@ -96,7 +96,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 

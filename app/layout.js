@@ -2,6 +2,7 @@ import "./globals.css";
 import { Forum } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Script from "next/script";
+import Footer from "./components/Footer";
 
 const forum = Forum({ subsets: ["latin"], weight: ["400"] });
 
@@ -13,10 +14,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-red text-white m-2 ">
+    <html lang="en" className="bg-red text-white">
       <body className={forum.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

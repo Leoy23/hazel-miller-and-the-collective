@@ -3,12 +3,9 @@ import Link from "next/link";
 
 const Bio = () => {
   return (
-    <section
-      className="bg-black text-white p-8 w-full min-h-screen mt-3"
-      id="bioPage"
-    >
+    <section className=" text-white p-8 w-full" id="bioPage">
       <h1 className="text-6xl p-4">BIO</h1>
-      <div className="flex flex-col sm:p-8">
+      <div className="flex flex-col sm:p-8 md:text-base">
         <p>
           Hazel Miller and the Collective is a highly popular and in-demand band
           in Colorado and beyond. Ms. Miller, an accomplished performer who has
@@ -67,6 +64,11 @@ const Bio = () => {
           <i>Real Jazz</i> and <i>B. B. King&apos;s Blues</i> stations. The band
           has had a long and well-publicized career in Colorado and nationally!
         </p>
+      </div>
+      <div className="flex justify-center items-center mt-4">
+        <button className="btn bg-maroon border-maroon text-white hover:text-maroon hover:bg-white hover:border-white">
+          MEET THE BAND
+        </button>
       </div>
     </section>
   );
